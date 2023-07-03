@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    font-size: 15px;
+    background: rgba(240, 246, 248, 0.5);
+}
+nav {
+    background: rgb(8, 162, 245);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5% 10px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav .item-left {
+    font-size: 20px;
+    display: flex;
+    gap: 25px;
+}
+nav .item-left span {
+    padding-top: 14px;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+nav ul li a{
+    color: black;
+}
+nav .item-right {
+    display: flex;
+    gap: 25px;
+}
+nav .item-right #shooping-cart{
+    font-size: 30px;
+    color: red;
+}
+nav .item-right input {
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 17px;
+}
+nav .item-right button#btn-search {
+    padding: 5px;
+    position: relative;
+    top: -2px;
+    bottom: 0;
+}
+.content-container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+}
+.content-container .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3% 5% 3% 5%;
+    gap: 30px;
+}
+.content-container .content .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(239, 192, 192, 0.429);
+    max-width: 180px;
+    min-height: 250px;
+}
+.content .box:hover {
+    transform: scale(1.2);
+    transition: transform linier;
+}
+.content .box .images img {
+    width: 100%;
+}
+.content .box .title h5 {
+    font-size: 14px;
+}
+.content .box .cart-plus #cart-plus  {
+    font-size: 20px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.beranda-container #beranda-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("/assets/img/background/food-store-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.small-box {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(239, 192, 192, 0.429);
+    max-width: 270px;
+    height: 50px;
+    font-size: 13px;
+}
+.small-box .images {
+    width: 100%;
+    padding-top: 3px;
+}
+.small-box .images img {
+    width: 80%;
+    object-fit: cover;
+    max-height:50px;
+}
